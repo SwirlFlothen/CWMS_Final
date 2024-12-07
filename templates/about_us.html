@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {% load static %}
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #f4f4f9, #eaeef3);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #007BFF, #0056b3);
+            padding: 20px 30px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #cce7ff;
+        }
+
+        /* Main Content */
+        main {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #007BFF;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            border-radius: 15px;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 0 20px;
+            text-align: justify;
+            position: relative;
+        }
+
+        p:before {
+            content: open-quote;
+            font-size: 3rem;
+            color: #007BFF;
+            position: absolute;
+            left: -40px;
+            top: -20px;
+        }
+
+        p:after {
+            content: close-quote;
+            font-size: 3rem;
+            color: #007BFF;
+            position: absolute;
+            right: -40px;
+            bottom: -20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: linear-gradient(45deg, #007BFF, #0056b3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">← Back to Home</a>
+    </header>
+    <main>
+        <h1>About Us</h1>
+
+        <p>
+            At <strong>Construction Waste Management System</strong>, we are passionate about transforming how the construction industry
+            handles waste. Our mission is to provide cutting-edge recycling solutions that help conserve natural resources,
+            reduce environmental impact, and create a cleaner, greener planet for future generations.
+        </p>
+        <p>
+            Our vision is to lead the global effort in sustainable construction practices. Through innovation, collaboration,
+            and a commitment to excellence, we strive to set a new benchmark in environmental responsibility.
+            We believe in empowering communities and businesses to join us on this journey toward a zero-waste future.
+        </p>
+    </main>
+
+</body>
+</html>

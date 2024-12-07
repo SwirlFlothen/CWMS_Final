@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .faq-section {
+            margin-top: 40px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            font-size: 16px;
+            color: #777;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Back to Home</a>
+    </header>
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <img src="/static/images/faq.jpg" alt="FAQ">
+        <p>Here you'll find answers to common questions about our services.</p>
+
+        <div class="faq-section">
+            <div class="faq-item">
+                <h3>What services do you offer?</h3>
+                <p>We offer a variety of services, including consulting, project management, and software development. Our team can help you with every step of your project's lifecycle.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I contact customer support?</h3>
+                <p>You can reach our customer support team through the contact form on our website or by emailing support@ourcompany.com.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is your pricing model?</h3>
+                <p>We offer competitive pricing for our services. You can request a quote based on your specific needs by filling out the contact form or calling us directly.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
